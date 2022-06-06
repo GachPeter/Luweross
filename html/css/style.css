@@ -1,0 +1,60 @@
+body{
+            /* background-image: url('../image/background'); */
+            background-color: black;
+    background-size: cover;
+    background-size: cover;
+    height: 100VH;
+}
+.card{
+                background: darkblue;
+
+    color: white;
+    background: -moz-linear-gradient(top right,darkblue,darkgreen);
+        background: -webkit-linear-gradient(top right,darkblue,darkgreen);
+
+            background: -ms-linear-gradient(top right,darkblue,darkgreen);
+
+
+}
+.cardi{
+    background-color: green;
+    text-align: center;
+    color: greenyellow;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    top:0;
+}
+.card:hover{
+    padding-left: 1%;
+padding-right: 1%;
+background: green;
+cursor: context-menu;
+
+    color: white;
+    background: -moz-linear-gradient(top right,darkgreen,darkblue);
+        background: -webkit-linear-gradient(top right,darkgreen,darkblue);
+
+            background: -ms-linear-gradient(top right,darkgreen,darkblue);
+}
+
+.form-control{
+    color: darkgreen;
+}
+*{
+    box-sizing: border-box;
+}
+a *{
+    color: white;
+    text-decoration: none;
+}
+#home{
+    background-image:-moz-radial-gradient(white,darkblue);
+        background-image:-webkit-radial-gradient(white,darkblue);
+
+}
+@media (min-width : 750px) {
+    .de{
+        height: 300px;
+    }
+}
