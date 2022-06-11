@@ -43,10 +43,10 @@ app.get("/js/script", (req, res) => {
 app.post("/feature", (req, res) => {
     User.create({ time: Date.now(), name: req.body.name, feature: req.body.feature, class: req.body.class, stream: req.body.stream }, (docs, err) => {
         if (docs&&!err) {
-            res.redirect('/failed');
+            res.redirect('/success');
         }
         else {
-            res.redirect('/success');
+            res.redirect('/failed');
         }
     });
 });
