@@ -33,28 +33,13 @@ app.get("/failed", (req, res) => {
     res.sendfile(__dirname + "/html/failed.html");
 });
 
-app.get("/js/bootstrap", (req, res) => {
-    res.sendfile(__dirname + "/html/bootstrap-4.0.0-dist/js/bootstrap.min.js");
-});
-app.get("/js/jquery", (req, res) => {
-    res.sendfile(__dirname + "/html/js/jquery.js");
-});
-app.get("/css/boostrap", (req, res) => {
-    res.sendfile(__dirname + "/html/bootstrap-4.0.0-dist/css/bootstrap.min.css");
-});
-
 app.get("/css/style", (req, res) => {
     res.sendfile(__dirname + "/html/css/style.css");
 });
 app.get("/js/script", (req, res) => {
     res.sendfile(__dirname + "/html/js/script.js");
 });
-app.get("/image/background", (req, res) => {
-    res.sendfile(__dirname + "/html/image/background.jpg");
-});
-app.get("/image/profile", (req, res) => {
-    res.sendfile(__dirname + "/html/image/gach.png");
-});
+
 app.post("/feature", (req, res) => {
     User.create({ time: Date.now(), name: req.body.name, feature: req.body.feature, class: req.body.class, stream: req.body.stream }, (docs, err) => {
         if (docs&&!err) {
